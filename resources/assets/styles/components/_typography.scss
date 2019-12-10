@@ -1,11 +1,10 @@
 %text {
   margin: 0;
   padding: 0;
-  font-weight: 300;
 }
 
 .headline {
-  @include cssLock("font-size", 360, 1470, (40, 90));
+  @include cssLock("font-size", 360, 1700, (40, 90));
 
   font-family: $font-special;
   color: $white;
@@ -15,7 +14,7 @@
 }
 
 .subheadline {
-  @include cssLock("font-size", 360, 1470, (20, 50));
+  @include cssLock("font-size", 360, 1700, (20, 50));
 
   font-family: $font-special;
   color: $white;
@@ -25,64 +24,43 @@
 }
 
 .title {
-  @include cssLock("font-size", 360, 1470, (30, 40));
+  @include cssLock("font-size", 360, 1700, (32, 52));
 
-  font-family: $font-special;
+  font-family: $font-main;
   font-weight: $bold-black;
   text-transform: uppercase;
-  display: block;
+  color: $black;
+
+  @extend %text;
+}
+
+.pretitle {
+  @include cssLock("font-size", 360, 1700, (32, 52));
+
+  font-family: $font-special;
+  color: $primary-light;
+  font-weight: $regular;
 
   @extend %text;
 
   &--small {
-    @include cssLock("font-size", 360, 1470, (20, 28));
+    @include cssLock("font-size", 360, 1700, (22, 32));
 
-    text-transform: capitalize;
-  }
-
-  &--center {
-    text-align: center;
-
-    &::after {
-      content: "";
-      display: block;
-      background: $primary-light;
-      width: gutter(10);
-      height: gutter(0.5);
-      margin: gutter(2) auto;
-    }
-  }
-}
-
-.subtitle {
-  @include cssLock("font-size", 360, 1470, (14, 16));
-
-  font-family: $font-special;
-  color: $black;
-  font-weight: $regular;
-  text-align: center;
-  margin: auto;
-  max-width: gutter(80);
-
-  @extend %text;
-
-  &--special {
-    @include cssLock("font-size", 360, 1470, (19, 23));
-
-    font-family: $font-special;
-    color: $primary;
-    font-weight: $bold-black;
+    color: $white;
   }
 }
 
 .text {
-  @include cssLock("font-size", 360, 1470, (12, 18));
+  @include cssLock("font-size", 360, 1700, (16, 20));
 
   font-family: $font-main;
-  color: lighten($black, 50);
-  font-weight: $regular;
+  font-weight: $light;
 
   @extend %text;
+
+  &--black {
+    color: $black;
+  }
 
   &--white {
     color: $white;
