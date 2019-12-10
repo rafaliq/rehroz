@@ -1,14 +1,15 @@
 .header {
   color: $white;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: $bold;
   width: 100%;
   z-index: 900;
   transition: $transition;
   position: fixed;
   top: 0;
-  padding-top: gutter(4);
-  padding-bottom: gutter(4);
+  padding-top: gutter(2);
+  padding-bottom: gutter(2);
+  border-bottom: 1px solid $white;
 
   &--hide {
     padding: gutter(0.4) 0;
@@ -16,6 +17,7 @@
   }
 
   &__row {
+    display: flex;
     justify-content: space-between;
     padding: gutter(2) 0;
     align-items: center;
@@ -105,7 +107,6 @@
         white-space: nowrap;
         opacity: 0;
         color: inherit;
-        text-transform: uppercase;
 
         @include media(">=lg") {
           padding: gutter(4) gutter(2);

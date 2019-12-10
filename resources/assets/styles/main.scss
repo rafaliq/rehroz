@@ -1,6 +1,6 @@
 // fonts
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Parisienne&display=swap&subset=latin-ext");
 
 // @import library;
 @import "node_modules/include-media/dist/include-media.scss";
@@ -8,15 +8,15 @@
 @import "~animate.css";
 @import "vendors/scss-lock/css-lock";
 
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
 //common
 @import "common/variables";
 @import "common/mixins";
 @import "common/functions";
 @import "common/helpers";
 @import "common/global";
-
-/** Import everything from autoload */
-@import "./autoload/**/*";
 
 // components
 @import "components/typography";

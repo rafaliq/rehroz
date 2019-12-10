@@ -3,8 +3,8 @@
 
 // tab colors
 $theme-colors: (
-  primary: #58b579,
-  primary-light: #ace9c0,
+  primary: #6c9900,
+  primary-light: #61ce4e,
   secondary: #f9d9c7,
   bg: #f7f7f7,
   light: #f3f3f3,
@@ -17,8 +17,8 @@ $theme-colors: (
 );
 
 // colors
-$primary: #58b579;
-$primary-light: #ace9c0;
+$primary: #6c9900;
+$primary-light: #61ce4e;
 $secondary: #f9d9c7;
 $bg: #f7f7f7;
 $light: #e9e9e9;
@@ -30,13 +30,14 @@ $white: #fff;
 $black: #000;
 
 // font weight
+$light: 3000;
 $regular: 400;
 $bold: 700;
 $bold-black: 900;
 
 // font family
-$font-main: "PT Sans";
-$font-title: "Lato";
+$font-main: "Lato", sans-serif;
+$font-special: "Parisienne", cursive;
 
 // media
 $breakpoints: (

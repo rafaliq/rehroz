@@ -1,13 +1,17 @@
 .button {
-  color: $black;
-  font-size: 1rem;
+  color: $white;
+  font-size: 1.2rem;
   font-family: $font-main;
-  padding: 0 gutter(2);
+  padding: gutter(1) gutter(2);
   line-height: 35px;
-  border: 3px solid $primary-light;
   display: inline-block;
-  border-radius: gutter(50);
-  margin: gutter(2) 0;
+  border-radius: gutter(0.5);
+  background: $primary;
+
+  &__icon {
+    padding-right: gutter(1);
+    font-size: 1.4rem;
+  }
 
   &:hover {
     color: $white;

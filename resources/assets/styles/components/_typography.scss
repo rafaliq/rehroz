@@ -7,7 +7,7 @@
 .headline {
   @include cssLock("font-size", 360, 1470, (40, 90));
 
-  font-family: $font-title;
+  font-family: $font-special;
   color: $white;
   font-weight: $bold-black;
 
@@ -17,7 +17,7 @@
 .subheadline {
   @include cssLock("font-size", 360, 1470, (20, 50));
 
-  font-family: $font-title;
+  font-family: $font-special;
   color: $white;
   font-weight: $bold-black;
 
@@ -27,7 +27,7 @@
 .title {
   @include cssLock("font-size", 360, 1470, (30, 40));
 
-  font-family: $font-title;
+  font-family: $font-special;
   font-weight: $bold-black;
   text-transform: uppercase;
   display: block;
@@ -57,7 +57,7 @@
 .subtitle {
   @include cssLock("font-size", 360, 1470, (14, 16));
 
-  font-family: $font-title;
+  font-family: $font-special;
   color: $black;
   font-weight: $regular;
   text-align: center;
@@ -69,7 +69,7 @@
   &--special {
     @include cssLock("font-size", 360, 1470, (19, 23));
 
-    font-family: $font-title;
+    font-family: $font-special;
     color: $primary;
     font-weight: $bold-black;
   }
