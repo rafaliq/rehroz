@@ -19,6 +19,7 @@
   font-family: $font-special;
   color: $white;
   font-weight: $bold-black;
+  display: block;
 
   @extend %text;
 }
@@ -30,6 +31,7 @@
   font-weight: $bold-black;
   text-transform: uppercase;
   color: $black;
+  display: block;
 
   @extend %text;
 }
@@ -51,7 +53,7 @@
 }
 
 .text {
-  @include cssLock("font-size", 360, 1700, (16, 20));
+  @include cssLock("font-size", 360, 1700, (16, 19));
 
   font-family: $font-main;
   font-weight: $light;
