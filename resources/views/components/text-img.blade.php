@@ -1,4 +1,4 @@
-<section class="section text-img @if ($data['pozycja'] == 'prawo') text-img--rev @endif">
+<section class="section section--color text-img @if ($data['pozycja'] == 'prawo') text-img--rev @endif">
   <div class="container">
     <div class="row text-img__wrapper justify-content-center">
       <div class="col-12 col-md-6 text-img__image-wrapper wow">
@@ -7,15 +7,15 @@
       <div class="col-12 col-md-6 text-img__content content-block py-0">
         <div>
           @if($data['header'] == 'tak')
-          <h2 class="section__title">
-            <span class="title">
-              {{ $data['title'] }}
-            </span>
+          <h2>
             @if($data['subtitle']) 
-              <span class="section__title subtitle subtitle--special">
+              <span class="pretitle">
                 {{ $data['subtitle'] }}
               </span>
             @endif  
+            <span class="title">
+              {{ $data['title'] }}
+            </span>
           </h2>
           @endif
           <div class="text">
@@ -23,7 +23,7 @@
           </div>
         </div>
         @if ($data['button'] == "tak")
-        <a href="{{ $data['link'] }}" class="button button--big">więcej</a>
+        <a href="{{ $data['link'] }}" class="button">więcej</a>
         @endif
       </div>
     </div>

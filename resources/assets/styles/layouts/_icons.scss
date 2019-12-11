@@ -1,0 +1,43 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+  &__img {
+    height: gutter(5);
+    width: auto;
+  }
+
+  &__title {
+    font-weight: $regular;
+    margin: 0;
+    padding: gutter(1.5) gutter(1) 0;
+    font-size: 16px;
+  }
+
+  &__box {
+    background-color: $primary-light;
+    width: 12.5%;
+    padding: gutter(4) 0;
+    cursor: pointer;
+    transition: $transition;
+
+    &:nth-child(even) {
+      background-color: $primary-dark;
+    }
+
+    &:hover {
+      background-color: $white;
+
+      .icons__img {
+        filter: invert(26%) sepia(55%) saturate(614%) hue-rotate(58deg) brightness(90%) contrast(84%);
+      }
+
+      .icons__title {
+        color: $primary-light;
+      }
+    }
+  }
+}

@@ -17,24 +17,19 @@
 
   &__image {
     width: 100%;
-    margin-top: gutter(2);
 
     @include media(">=sm") {
       object-fit: cover;
       object-position: center;
       height: 100%;
-      margin-top: 0;
     }
   }
 
   &__content {
     order: 0;
     align-self: center;
-    padding: gutter(1) gutter(7);
 
     @include media("<md") {
-      margin-bottom: gutter(2);
-      padding: gutter(1) gutter(1.5);
       order: -1;
     }
   }

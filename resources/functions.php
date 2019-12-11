@@ -102,3 +102,9 @@ if( function_exists('acf_add_options_page') ) {
 function get_option_field($var) {
     return get_field($var, 'option');
 }
+
+function add_svg_to_upload_mimes( $types ) {
+    $types[ 'svg' ] = 'image/svg+xml';
+    return $types;
+}
+add_filter( 'upload_mimes', 'add_svg_to_upload_mimes' );

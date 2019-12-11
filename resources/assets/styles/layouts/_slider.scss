@@ -10,17 +10,15 @@
 
   &__content {
     position: absolute;
-    top: gutter(30);
+    top: 32%;
     color: $white;
   }
 
   &__text {
-    margin: gutter(3) 0;
     max-width: gutter(55);
   }
 
   &__title {
-    margin: gutter(3) 0;
-    max-width: gutter(55);
+    max-width: gutter(54);
   }
 }

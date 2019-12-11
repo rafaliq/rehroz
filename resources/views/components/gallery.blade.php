@@ -2,22 +2,22 @@
 $gallery = $data['gallery'];
 @endphp
 
-<section class="section">
-  <div class="container">
-    @include('partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle']])
-    <div class="row">
-      <div class="col-12">
-        <div class="gallery">
-          @php
-          $galleryName = rand(1, 999);
-          @endphp
-          @foreach ($gallery as $img)
+<section>
+  <div class="container-fluid">
+    @if($data['title'])
+      @include('partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle']])
+    @endif
+    <div class="gallery">
+      @php
+        $galleryName = rand(1, 999);
+      @endphp
+      @foreach ($gallery as $img)
+        <div class="gallery__image">
           <a data-fancybox="gallery{{$galleryName}}" href="{{ $img['url'] }}">
             <img class="gallery__image" src="{{ $img['sizes']['medium'] }}">
           </a>
-          @endforeach
-        </div>
-      </div>
+        </div>  
+      @endforeach
     </div>
   </div>
 </section>

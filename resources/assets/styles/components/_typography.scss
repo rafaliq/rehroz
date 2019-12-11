@@ -3,35 +3,15 @@
   padding: 0;
 }
 
-.headline {
-  @include cssLock("font-size", 360, 1700, (40, 90));
-
-  font-family: $font-special;
-  color: $white;
-  font-weight: $bold-black;
-
-  @extend %text;
-}
-
-.subheadline {
-  @include cssLock("font-size", 360, 1700, (20, 50));
-
-  font-family: $font-special;
-  color: $white;
-  font-weight: $bold-black;
-  display: block;
-
-  @extend %text;
-}
-
 .title {
-  @include cssLock("font-size", 360, 1700, (32, 52));
+  @include cssLock("font-size", 360, 1700, (32, 50));
 
   font-family: $font-main;
   font-weight: $bold-black;
   text-transform: uppercase;
   color: $black;
   display: block;
+  margin: gutter(3) 0;
 
   @extend %text;
 }
@@ -57,6 +37,8 @@
 
   font-family: $font-main;
   font-weight: $light;
+  margin: gutter(3.5) 0;
+  letter-spacing: 0;
 
   @extend %text;
 

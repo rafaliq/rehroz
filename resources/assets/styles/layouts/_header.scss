@@ -13,7 +13,7 @@
 
   &--hide {
     padding: gutter(0.4) 0;
-    background-color: darken($primary, 10);
+    background-color: darken($primary, 7);
   }
 
   &__row {
@@ -36,6 +36,12 @@
     margin-right: gutter(2);
 
     @include media(">=lg") {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include media("<xl") {
       display: none;
     }
   }
@@ -80,7 +86,7 @@
       position: relative;
 
       @include media(">=lg") {
-        padding: 0 gutter(1.9);
+        padding: 0 gutter(1);
 
         // &:first-child {
         //   padding-left: 0;

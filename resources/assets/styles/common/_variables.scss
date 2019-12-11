@@ -4,8 +4,9 @@
 // tab colors
 $theme-colors: (
   primary: #6c9900,
+  secondary: #358228,
   primary-light: #61ce4e,
-  secondary: #f9d9c7,
+  primary-dark: #51b340,
   bg: #f7f7f7,
   light: #f3f3f3,
   dark: #262a2c,
@@ -18,8 +19,9 @@ $theme-colors: (
 
 // colors
 $primary: #6c9900;
+$secondary: #358228;
 $primary-light: #61ce4e;
-$secondary: #f9d9c7;
+$primary-dark: #51b340;
 $bg: #f7f7f7;
 $light: #e9e9e9;
 $dark: #262a2c;
@@ -30,7 +32,7 @@ $white: #fff;
 $black: #000;
 
 // font weight
-$light: 3000;
+$light: 300;
 $regular: 400;
 $bold: 700;
 $bold-black: 900;

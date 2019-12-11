@@ -1,19 +1,23 @@
 .footer {
-  background-color: $primary;
+  background-color: $secondary;
   font-size: 14px;
   margin: 0 auto;
   text-align: left;
   line-height: 20px;
   color: $white;
-  padding: gutter(3) 0;
+  padding: gutter(0.5) 0;
 
   @include media("<md") {
     text-align: center;
   }
 
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__copyright {
-    font-size: 18px;
-    margin-top: $gutter;
+    font-size: 16px;
     align-items: center;
     display: flex;
 
@@ -32,7 +36,7 @@
     justify-content: center;
 
     img {
-      height: gutter(5);
+      height: gutter(4);
       width: auto;
     }
   }

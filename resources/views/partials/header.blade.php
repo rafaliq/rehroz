@@ -23,10 +23,12 @@
             ]) !!}
         @endif
       </nav>
-      <a href="#" class="button">
-        <i class="fas fa-phone button__icon"></i>
-        {{ get_option_field("phone") }}
-      </a>
+      <div class="header__button">
+        <a href="#" class="button">
+          <i class="fas fa-phone button__icon"></i>
+          {{ get_option_field("phone") }}
+        </a>
+      </div>
     </div>
   </div>
 </header>
