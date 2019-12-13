@@ -1,56 +1,35 @@
 .contact {
-  font-size: 20px;
-  color: $black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: gutter(2);
-    flex-direction: column;
-
-    @include media(">=md") {
-      flex-wrap: nowrap;
-      text-align: left;
-      flex-direction: row;
-    }
+  &__text {
+    max-width: gutter(50);
   }
 
-  &__icon {
-    color: $white;
-    background-color: $primary;
-    font-size: 45px;
-    width: gutter(8);
-    height: gutter(8);
-    border-radius: 100%;
-    padding: gutter(2.5);
-    margin: 0 0 gutter(1.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &--phone i {
-      transform: rotate(100deg);
-    }
-
-    @include media(">=md") {
-      margin: 0 gutter(2) gutter(1.5) 5px;
-    }
+  &__map {
+    width: 100%;
+    padding-left: gutter(15);
+    margin-top: gutter(22);
+    position: relative;
   }
 
-  &__title {
-    font-size: 16px;
-    font-weight: $bold;
-    text-transform: uppercase;
+  &__box {
+    position: absolute;
+    top: 40%;
+    left: gutter(6);
+    background-color: $primary-dark;
+    padding: gutter(3) gutter(4);
+    font-weight: $regular;
 
-    a {
-      color: $black;
+    &-title {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: $bold;
+    }
 
-      &:hover {
-        color: $primary;
-      }
+    &-text {
+      padding-top: gutter(1);
+      display: block;
     }
   }
 }

@@ -1,5 +1,5 @@
 .section {
-  padding: gutter(8) 0;
+  padding: gutter(10) 0;
   margin: 0 auto;
 
   &__title {
@@ -12,8 +12,8 @@
   }
 
   &--bg {
-    background: url("../images/bg.png");
-    background-position: bottom;
+    background: url("../images/bg.jpg");
+    background-position: top;
   }
 
   &--color {

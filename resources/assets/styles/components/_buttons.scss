@@ -5,9 +5,11 @@
   padding: gutter(1) gutter(2);
   line-height: 35px;
   display: inline-block;
+  border: 0;
   border-radius: gutter(0.5);
   background: $primary;
   text-transform: uppercase;
+  cursor: pointer;
 
   &__icon {
     padding-right: gutter(1);

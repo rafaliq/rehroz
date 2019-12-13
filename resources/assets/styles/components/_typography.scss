@@ -42,6 +42,13 @@
 
   @extend %text;
 
+  &--small {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: gutter(1.8);
+  }
+
   &--black {
     color: $black;
   }
