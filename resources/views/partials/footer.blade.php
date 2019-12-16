@@ -61,10 +61,14 @@
             {!!  get_option_field("address") !!}
           </span>
           <span class="contact__box-text">
-            {{  get_option_field("phone") }}<br>
+            <a class="contact__box-link" href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">
+              {{  get_option_field("phone") }}
+            </a>
           </span>
-          <span class="contact__box-text">  
-            {{  get_option_field("email") }}<br>
+          <span class="contact__box-text">
+            <a class="contact__box-link" href="mailto:{{ get_option_field('email') }}">  
+              {{  get_option_field("email") }}
+            </a>
           </span>
         </div>
       </div>

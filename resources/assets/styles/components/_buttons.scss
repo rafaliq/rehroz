@@ -18,7 +18,7 @@
 
   &:hover {
     color: $white;
-    background-color: $primary-light;
+    background-color: lighten($primary, 6);
   }
 
   &--big {

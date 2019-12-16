@@ -24,7 +24,7 @@
         @endif
       </nav>
       <div class="header__button">
-        <a href="#" class="button">
+        <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}" class="button">
           <i class="fas fa-phone button__icon"></i>
           {{ get_option_field("phone") }}
         </a>
