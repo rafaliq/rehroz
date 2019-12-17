@@ -2,6 +2,10 @@
   padding: gutter(10) 0;
   margin: 0 auto;
 
+  @include media("<md") {
+    padding: gutter(6) 0;
+  }
+
   &__title {
     margin-bottom: gutter(4);
   }
