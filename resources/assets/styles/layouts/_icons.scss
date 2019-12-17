@@ -1,9 +1,19 @@
 .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: wrap;
   text-align: center;
+
+  @include media("<lg") {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include media("<md") {
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__img {
     height: gutter(5);
@@ -19,7 +29,7 @@
 
   &__box {
     background-color: $primary-light;
-    width: 205px;
+    //width: 205px;
     padding: gutter(4) 0;
     cursor: pointer;
     transition: $transition;
