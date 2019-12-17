@@ -1,6 +1,31 @@
 .stays {
   text-align: center;
 
+  &__content {
+    position: relative;
+    padding-bottom: gutter(30);
+    padding-top: gutter(10);
+    overflow: hidden;
+  }
+
+  &__images {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: -1;
+
+    &-columns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: gutter(40);
+    }
+  }
+
+  &__img {
+    padding: gutter(1);
+  }
+
   &__box {
     background-color: $white;
     padding: 0 gutter(5);
