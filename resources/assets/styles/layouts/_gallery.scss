@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 
+  @include media("<md") {
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__image {
     object-fit: cover;
 

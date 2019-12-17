@@ -1,24 +1,16 @@
-{{-- @if(get_field('show_map'))
-
-<section>
-  {!! do_shortcode('[google_map_easy id="1"]') !!}
-</section>
-
-@endif --}}
-
 <section class="section section--bg">
   <div class="container">
     <div class="contact">
       <div class="contact__content">
         <div>
-          <h3>
+          <h2>
             <span class="pretitle">
               Kontakt
             </span>
             <span class="title">
               Zarezerwuj pobyt
             </span>
-          </h3>
+          </h2>
           <div class="text contact__text">
             Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
           </div>

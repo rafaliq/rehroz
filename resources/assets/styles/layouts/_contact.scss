@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @include media("<lg") {
+    grid-template-columns: 1fr;
+  }
+
   &__text {
     max-width: gutter(50);
   }
@@ -11,6 +15,11 @@
     padding-left: gutter(15);
     margin-top: gutter(22);
     position: relative;
+
+    @include media("<lg") {
+      padding-left: 0;
+      margin-top: gutter(10);
+    }
   }
 
   &__box {
@@ -20,6 +29,12 @@
     background-color: $primary-dark;
     padding: gutter(3) gutter(4);
     font-weight: $regular;
+
+    @include media("<lg") {
+      top: gutter(31.9);
+      left: 0;
+      width: 100%;
+    }
 
     &-title {
       text-transform: uppercase;

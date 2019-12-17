@@ -19,6 +19,7 @@ $builder
             ->addLayout(get_field_partial('components.banner'))
             ->addLayout(get_field_partial('components.page-title'))
             ->addLayout(get_field_partial('components.hr'))
+            ->addLayout(get_field_partial('components.stays'))
             ->addLayout('Content', ['label' => 'Treść']);
 
 return $builder;

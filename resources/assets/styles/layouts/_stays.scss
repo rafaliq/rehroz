@@ -1,0 +1,64 @@
+.stays {
+  text-align: center;
+
+  &__box {
+    background-color: $white;
+    padding: 0 gutter(5);
+    max-width: gutter(50);
+    margin: auto;
+
+    @include media("<md") {
+      overflow: hidden;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: gutter(5) 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: $primary-dark;
+      position: absolute;
+      left: -80px;
+    }
+
+    &--rev {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      &::after {
+        left: calc(100% + 20px);
+      }
+    }
+  }
+
+  &__icon {
+    border: 2px solid $primary-dark;
+    border-radius: 100%;
+    padding: gutter(3);
+    display: inline-block;
+  }
+
+  &__desc {
+    padding: 0 gutter(4);
+  }
+
+  &__title {
+    font-weight: $bold-black;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding: gutter(2) 0;
+  }
+}
