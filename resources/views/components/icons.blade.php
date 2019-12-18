@@ -5,12 +5,12 @@
     @endif
     <div class="icons">
       @foreach($data['icons'] as $item)
-        <div class="icons__box">
+        <a @if($item['link']) href="{{ $item['link']['url'] }}" @endif class="icons__box">
           <img class="icons__img" src="{{ $item['icon']['url'] }}">
           <h3 class="text text--white icons__title">
             {{ $item['title'] }}
           </h3>
-        </div>
+        </a>
       @endforeach
     </div>
   </div>
