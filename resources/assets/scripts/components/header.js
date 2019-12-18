@@ -14,7 +14,14 @@ const header = {
     this.class = CLASS;
     this.offset = OFFSET;
 
+    this.position();
     this.scroll();
+  },
+
+  position() {
+    if(window.pageYOffset > 50) {
+      this.elem.classList.add(this.class);
+    }
   },
 
   scroll() {

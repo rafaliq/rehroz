@@ -12,7 +12,6 @@ $config = (object) [
 $icons = new FieldsBuilder('icons', ['label' => 'boxy z ikonami']);
 
 $icons
-    ->addFields(get_field_partial('components.title'))
     ->addRepeater('icons', ['label' => 'Zdjęcia'])
       ->addImage('icon', ['label' => 'Zdjęcie'])
       ->addText('title', ['label' => 'Tytuł zdjęcia'])

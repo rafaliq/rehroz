@@ -1,8 +1,10 @@
 <section class="section section--color">
   <div class="container">
-    @if($data['title'])
-      @include('partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle']])
-    @endif
+    <div class="text--center">
+      @if($data['title'])
+        @include('partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle']])
+      @endif
+    </div>
     <div class="icons">
       @foreach($data['icons'] as $item)
         <a @if($item['link']) href="{{ $item['link']['url'] }}" @endif class="icons__box">

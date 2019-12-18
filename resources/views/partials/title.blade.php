@@ -1,9 +1,10 @@
-<h2 class="section__title title title--center">
-	{{ $title  }}
+<h2>
+	@if($data['subtitle']) 
+		<span class="pretitle">
+			{{ $data['subtitle'] }}
+		</span>
+	@endif  
+	<span class="title">
+		{{ $data['title'] }}
+	</span>
 </h2>
-
-@if($subtitle)
-<p class="section__title subtitle">
-	{{ $subtitle  }}
-</p>
-@endif
