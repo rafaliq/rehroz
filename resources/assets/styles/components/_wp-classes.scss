@@ -55,3 +55,6 @@
   @extend .sr-only-focusable;
 }
 
+.main {
+  min-height: calc(100vh - 100px);
+}

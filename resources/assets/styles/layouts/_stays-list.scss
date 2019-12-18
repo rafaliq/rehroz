@@ -1,0 +1,13 @@
+.stays-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: gutter(5);
+
+  @include media("<lg") {
+    grid-template-columns: 1fr;
+  }
+
+  &::before {
+    display: none;
+  }
+}

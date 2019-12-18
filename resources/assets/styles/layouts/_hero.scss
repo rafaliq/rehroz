@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: gutter(40);
+  height: gutter(35);
   color: $white;
 
   &__bg {
@@ -13,7 +13,7 @@
 
   &__content {
     position: absolute;
-    top: 45%;
+    top: 50%;
     width: 100%;
     text-align: center;
     margin: auto;
@@ -22,7 +22,6 @@
 
   &__header {
     padding: gutter(1) gutter(2);
-    font-size: 2em;
     position: relative;
   }
 

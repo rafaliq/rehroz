@@ -12,7 +12,7 @@
             </span>
           </h2>
           <div class="text contact__text">
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+            {!! $data['content'] !!}
           </div>
         </div>
         <form class="form">

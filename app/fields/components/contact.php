@@ -11,4 +11,7 @@ $config = (object) [
 
 $contact = new FieldsBuilder('contact', ['label' => 'Kontakt']);
 
+$contact
+    ->addWysiwyg('content', ['label' => 'Opis', 'media_upload' => 0]);
+
 return $contact;
