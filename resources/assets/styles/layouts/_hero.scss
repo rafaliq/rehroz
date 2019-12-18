@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 110vh;
+  height: gutter(40);
   color: $white;
 
   &__bg {
@@ -13,7 +13,7 @@
 
   &__content {
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 4%;
     width: 100%;
     text-align: center;
@@ -22,8 +22,8 @@
   }
 
   &__header {
-    background-color: rgba($black, 0.7);
     padding: gutter(1) gutter(2);
+    font-size: 2em;
     position: relative;
   }
 

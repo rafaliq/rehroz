@@ -1,11 +1,8 @@
 <section class="hero">
   <div class="hero__content">
     <h1>
-      <span class="hero__header headline">
+      <span class="hero__header title text--white">
         {{ $data['header'] }}
-        <span class="hero__subheader subheadline">
-            {{ $data['subheader'] }}
-          </span>
       </span>
     </h1>
   </div>

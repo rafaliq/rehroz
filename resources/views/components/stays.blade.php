@@ -30,7 +30,7 @@
               Pobyty lecznicze
             </h3>
             <p class="text stays__text">
-              Jest to jedna z metod - wanna / terapia osteopatycznych, stosuje się przy dolegliwościach związanych z ciałem pacjenta, ale również z całą jego osobą.
+              Program kierowany jest do osób po urazach i wypadkach, po operacjach stawu barkowego, biodrowego, kolanowego  oraz kręgosłupa, z dolegliwościami bólowymi kręgosłupa              
             </p>
             <a href="#" class="link">
               Więcej &#8594;
@@ -46,7 +46,8 @@
               Turnusy rehabilitacyjne
             </h3>
             <p class="text stays__text">
-              Zdjęcia z dziećmi Jest to jedna z metod osteopatycznych, stosuje się przy dolegliwościach związanych z ciałem pacjenta, ale również z całą jego osobą.
+              Odbywa się w Centrum Rehabilitacji Rehroz w Mrągowie w wybranym przez Państwo terminie, dostępnym na stronie.
+              Pokój 2 – 3 osobowy -> lub apartament 4-5 osobowy.
             </p>
             <a href="#" class="link">
               Więcej &#8594;
@@ -62,7 +63,8 @@
               Pobyty wypocznykowe
             </h3>
             <p class="text stays__text">
-              Jest to jedna z metod - 2 dziadków wypoczywa osteopatycznych, stosuje się przy dolegliwościach związanych z ciałem pacjenta, ale również z całą jego osobą.
+              5 noclegów w pokoju 2-3 osobowym lub w apartamencie rodzinnym 4-5 osobowym
+              doba rozpoczyna się o godzinie 15 w niedzielę, kończy o 11 w piątek.
             </p>
             <a href="#" class="link">
               Więcej &#8594;
