@@ -1,5 +1,5 @@
-<section class="section section--color text-img @if ($data['pozycja'] == 'prawo') text-img--rev @endif">
-  <div class="container">
+<section class="section @if ($data['gray'] == 'tak') section--color @endif text-img @if ($data['pozycja'] == 'prawo') text-img--rev @endif">
+  <div class="container @if ($data['size'] == "maly") container--medium @endif">
     <div class="row text-img__wrapper justify-content-center">
       <div class="col-12 col-md-6 text-img__image-wrapper wow">
         <img class="text-img__image" src="{{ $data['image']['url'] }}" alt="{{ $data['image']['alt'] }}">
