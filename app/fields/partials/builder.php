@@ -21,6 +21,6 @@ $builder
             ->addLayout(get_field_partial('components.hr'))
             ->addLayout(get_field_partial('components.stays'))
             ->addLayout(get_field_partial('components.contact'))
-            ->addLayout('Content', ['label' => 'Treść']);
+            ->addLayout('content', ['label' => 'Treść']);
 
 return $builder;

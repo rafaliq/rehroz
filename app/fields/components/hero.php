@@ -13,7 +13,7 @@ $hero = new FieldsBuilder('hero', ['label' => 'hero']);
 
 $hero
     ->addImage('image', ['label' => 'Tło'])
-    ->AddText('header', ['label' => 'tytuł'])
+    ->addText('header', ['label' => 'tytuł'])
     ->addText('subheader', ['label' => 'podtytuł']);
 
 return $hero;

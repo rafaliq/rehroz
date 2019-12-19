@@ -100,7 +100,7 @@
       }
 
       &:hover {
-        color: $primary;
+        color: $white;
         text-decoration: underline;
 
         @include media(">=lg") {
