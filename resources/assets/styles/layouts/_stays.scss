@@ -78,6 +78,12 @@
     border-radius: 100%;
     padding: gutter(3);
     display: inline-block;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
   }
 
   &__desc {
@@ -90,8 +96,8 @@
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 17px;
+    line-height: 18px;
     margin: 0;
     padding: gutter(2) 0;
   }

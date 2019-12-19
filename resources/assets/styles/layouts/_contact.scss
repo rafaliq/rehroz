@@ -31,7 +31,7 @@
     font-weight: $regular;
 
     @include media("<lg") {
-      top: gutter(31.9);
+      top: gutter(35);
       left: 0;
       width: 100%;
     }
