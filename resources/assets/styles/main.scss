@@ -8,15 +8,15 @@
 @import "~animate.css";
 @import "vendors/scss-lock/css-lock";
 
-/** Import everything from autoload */
-@import "./autoload/**/*";
-
 //common
+@import "common/functions";
 @import "common/variables";
 @import "common/mixins";
-@import "common/functions";
 @import "common/helpers";
 @import "common/global";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
 
 // components
 @import "components/typography";

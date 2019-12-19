@@ -6,6 +6,11 @@
     padding-bottom: gutter(30);
     padding-top: gutter(10);
     overflow: hidden;
+
+    @include media("<md") {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &__images {
@@ -19,6 +24,10 @@
       align-items: center;
       justify-content: center;
       max-width: gutter(40);
+    }
+
+    @include media("<md") {
+      display: none;
     }
   }
 
