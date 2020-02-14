@@ -12,3 +12,18 @@
     </div>
   </div>
 </footer>
+<script>
+  $(function() {
+      $('.form').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+          type: 'post',
+          url: 'https://centrumzdrowiarehroz.pl/mail.php',
+          data: $(this).serialize(),
+          success: function () {
+            alert('Wiadomość została wysłana!');
+          }
+        });
+      });
+  });
+</script>

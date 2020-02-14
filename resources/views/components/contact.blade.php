@@ -15,24 +15,24 @@
             {!! $data['content'] !!}
           </div>
         </div>
-        <form class="form">
+        <form class="form" action="https://centrumzdrowiarehroz.pl/mail.php">
           <div class="form-group">
-            <input type="text" class="form-control form__input" id="name" placeholder="Imię i Nazwisko">
+            <input type="text" class="form-control form__input" name="name" id="name" placeholder="Imię i Nazwisko" required>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="email" class="form-control form__input" id="phone" placeholder="Telefon kontaktowy">
+              <input type="text" class="form-control form__input" name="phone" id="phone" placeholder="Telefon kontaktowy">
             </div>
             <div class="form-group col-md-6">
-              <input type="email" class="form-control form__input" id="email" placeholder="Adres e-mail">
+              <input type="email" class="form-control form__input" name="mail" id="mail" placeholder="Adres e-mail" required>
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control form__input" id="exampleFormControlTextarea1" rows="6" placeholder="Wiadomość"></textarea>
+            <textarea class="form-control form__input" id="exampleFormControlTextarea1" name="message" id="message" rows="6" placeholder="Wiadomość" required></textarea>
           </div>
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="checbox">
+              <input class="form-check-input" type="checkbox" id="checbox" checked required>
               <label class="form-check-label text text--small" for="checkbox">
                 Zapoznałem się z Polityką prywatności serwisu [www] oraz wyrażam zgodę na przetwarzanie przez [Nazwa firmy], z siedzibą w Mrągowie, udostępnionych przeze mnie danych osobowych na zasadach opisanych w Polityce prywatności dostępnej w Serwisie. Oświadczam, że są mi znane cele przetwarzania danych oraz moje uprawnienia. Niniejsza zgoda może być wycofana w dowolnym czasie poprzez kontakt z Administratorem pod adresem [EMAIL], bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Więcej informacji dotyczących przetwarzania danych osobowych - Obowiązek Informacyjny.
               </label>

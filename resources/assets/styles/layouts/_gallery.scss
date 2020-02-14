@@ -11,6 +11,7 @@
 
   &__image {
     object-fit: cover;
+    height: gutter(30);
 
     img {
       width: 100%;
